@@ -1,0 +1,417 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0; /* Increased padding for more space */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  text-size-adjust: 40;
+}
+
+.navbar .max-width {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px; /* Increased padding for better alignment */
+}
+
+.navbar .logo a {
+    color: #fff;
+    font-size: 28px; /* Increased font size */
+    font-weight: bold;
+}
+
+.navbar .menu {
+    display: flex;
+}
+
+.navbar .menu li {
+    margin: 0 20px; /* Increased margin for spacing */
+}
+
+.navbar .menu a {
+    color: #fff;
+    font-weight: 600; /* Increased font weight */
+    font-size: 30px; /* Increased font size */
+}
+
+.navbar .menu-btn i {
+    font-size: 30px; /* Increased font size */
+    color: #fff;
+}
+
+/* Home Section */
+.home {
+    height: 100vh;
+    background: url('path-to-your-cover-image.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+.home-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1; /* Ensure content is on top of the image */
+}
+
+.home .profile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.home .profile img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: brightness(50%); /* Darken image to improve text visibility */
+}
+
+.home .text-1,
+.home .text-2,
+.home .text-3 {
+    position: relative; /* Position relative for text shadow effect */
+    z-index: 2; /* Ensure text is on top of background */
+    color: #fff; /* White text color for contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow to improve readability */
+}
+
+.home .text-1 {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.home .text-2 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.home .text-3 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.home a {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 30px;
+    background-color: #ff6600;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    text-decoration: none; /* Remove underline from link */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Add shadow to button text */
+}
+
+.home a:hover {
+    background-color: #e65c00; /* Darker shade on hover */
+}
+
+
+
+/* About Section */
+.about {
+    padding: 20px; /* Increased padding */
+    background-color: #f9f9f9;
+}
+
+.about .title {
+    font-size: 50px; /* Increased font size */
+    margin-bottom: 30px; /* Increased margin for spacing */
+}
+
+.about .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ensure responsiveness */
+}
+
+.about .column.left {
+    flex: 1 1 40%; /* Adjust width of the image column */
+    max-width: 40%;
+}
+
+.about .column.left img {
+    border-radius: 50%;
+    width: 100%; /* Make image responsive */
+    height: auto;
+}
+
+.about .column.right {
+    flex: 1 1 60%; /* Adjust width of the text column */
+    max-width: 60%;
+    text-align: left;
+    font-size: 40px;
+    margin-right: 0; /* Remove any margin-right */
+}
+
+.about .text {
+    font-size: 60px; /* Increased font size */
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.about p {
+    font-size: 40px; /* Increased font size */
+    line-height: 1.6; /* Increased line height for readability */
+}
+
+.about a {
+    display: inline-block;
+    margin-top: 30px; /* Increased margin for spacing */
+    background-color: #ff6600;
+    color: #fff;
+    padding: 15px 30px; /* Increased padding for a larger button */
+    border-radius: 5px;
+    font-size: 18px; /* Increased font size */
+}
+
+/* Services Section */
+.services {
+    padding: 100px 30px; /* Further increased padding */
+    background-color: #fff;
+}
+
+.services .title {
+    font-size: 60px; /* Further increased font size */
+    margin-bottom: 40px; /* Further increased margin for spacing */
+}
+
+.services .serv-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.services .card {
+    width: 30%;
+    background-color: #f4f4f4;
+    padding: 40px; /* Further increased padding */
+    border-radius: 5px;
+    margin-bottom: 40px; /* Further increased margin for spacing */
+    text-align: center;
+}
+
+.services .box i {
+    font-size: 60px; /* Further increased font size */
+    color: #ff6600;
+}
+
+.services .box .text {
+    font-size: 40px; /* Further increased font size */
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.services .box p {
+    font-size: 30px; /* Further increased font size */
+    line-height: 1.8; /* Further increased line height for readability */
+}
+
+
+/* Skills Section */
+.skills {
+    padding: 100px 30px; /* Further increased padding */
+    background-color: #f9f9f9;
+}
+
+.skills .title {
+    font-size: 60px; /* Further increased font size */
+    margin-bottom: 40px; /* Further increased margin for spacing */
+}
+
+.skills .skills-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills .column.left,
+.skills .column.right {
+    width: 50%;
+}
+
+.skills .text {
+    font-size: 40px; /* Further increased font size */
+    font-weight: 500;
+}
+.skills .intern {
+    font-size: 30px;
+}
+
+.skills .bars {
+    margin-bottom: 80px; /* Further increased margin for spacing */
+}
+
+.skills .bars .info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+}
+
+.skills .bars .line {
+    height: 15px; /* Further increased height */
+    background-color: #ff6600;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.skills .bars .line.python {
+    width: 80%;
+}
+
+.skills .bars .line.html {
+    width: 80%;
+}
+
+.skills .bars .line.css {
+    width: 60%;
+}
+
+.skills .bars .line.js {
+    width: 40%;
+}
+
+.skills .bars .line.bootstraps {
+    width: 60%;
+}
+
+
+/* Contact Section */
+.contact {
+    padding: 80px 20px; /* Increased padding */
+    background-color: #fff;
+}
+
+.contact .title {
+    font-size: 60px; /* Increased font size */
+    margin-bottom: 30px; /* Increased margin for spacing */
+}
+
+.contact .contact-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact .column.left {
+    width: 50%;
+}
+
+.contact .column.right {
+    width: 50%;
+}
+
+.contact .text {
+    font-size: 40px; /* Increased font size */
+    font-weight: 500;
+}
+
+.contact .icons {
+    margin-top: 30px; /* Increased margin for spacing */
+}
+
+.contact .icons .row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Increased margin for spacing */
+}
+
+.contact .icons .row i {
+    font-size: 30px; /* Increased font size */
+    color: #ff6600;
+    margin-right: 15px; /* Increased margin for spacing */
+}
+
+.contact .icons .info .head {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.contact .icons .info .sub-title {
+    color: #666;
+    font-size: 30px;
+}
+
+.contact form .fields {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact form .field {
+    width: 48%;
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    padding: 15px; /* Increased padding */
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 30px; /* Increased font size */
+}
+
+.contact form button {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 15px 30px; /* Increased padding for a larger button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 30px; /* Increased font size */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0; /* Increased padding */
+    text-align: center;
+}
+
+footer a {
+    color: #ff6600;
+    font-size: 20px; /* Increased font size */
+}
